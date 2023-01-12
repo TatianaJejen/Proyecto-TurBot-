@@ -9,8 +9,8 @@
   - [Commits](#commits)
   - [Commit 1. Creación Rama DEV para Repositorio](#commit-1-creación-rama-dev-para-repositorio)
   - [Commit 2. Inicio Web Service Turbot](#commit-2-inicio-web-service-turbot)
-  - [Commit 3. Cargue del Loggina](#commit-3-cargue-del-loggina)
-    - [Clase 3 Historia de las RDB (relational data bases)](#clase-3-historia-de-las-rdb-relational-data-bases)
+  - [Commit 3. Cargue del Loggin](#commit-3-cargue-del-loggin)
+  - [Commit 4. Actualización vista administrador (relational data bases)](#commit-4-actualización-vista-administrador-relational-data-bases)
     - [Clase 4 Entidades y atributos](#clase-4-entidades-y-atributos)
       - [Atributos](#atributos)
       - [Entidades](#entidades)
@@ -109,86 +109,19 @@ Comenzaremos trabajando por la rama DEV de manera colaborativa
 
 ## Commit 2. Inicio Web Service Turbot
 
-Creación de la estructura que usaremeos en nuestro web service, se decide usar para HTML y CSS Bootstrap que es un framework front-end utilizado para desarrollar aplicaciones web ya que agiliza el diseño al contar con variación de plantillas y complementos para JavaScript tambien Django es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como modelo–vista–controlador y nos ayudara a cómo configurar un entorno de desarrollo y cómo empezar a usarlo para crear tus propias aplicaciones web. Por ultimo como gestor de bases relacionales utilizaremos PostgreSQL. 
+Creación de la estructura que usaremeos en nuestro web service, se decide usar para HTML y CSS Bootstrap que es un framework front-end utilizado para desarrollar aplicaciones web ya que agiliza el diseño al contar con variación de plantillas y complementos para JavaScript tambien se opta por manejar Django es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como modelo–vista–controlador y nos ayudara a cómo configurar un entorno de desarrollo y cómo empezar a usarlo para crear tus propias aplicaciones web. Por ultimo como gestor de bases relacionales utilizaremos PostgreSQL. 
 
-## Commit 3. Cargue del Loggina
+## Commit 3. Cargue del Loggin
 
 Se genera la creacion de la vista principal del loggin donde los usuarios finales ingresaran sus datos y este realizara una validacion de credenciales para poder dar acceso a la pagina inicialmente antes de crear la conexión a la base y proceder a configurar las validaciones, se realiza un diseño de estilos para poder volver el front más amigable a los usuarios, se decide tomar la paleta de colores DataPro
 
 ![src/loggin.png](src/loggin.png)
 
 
-### Clase 3 Historia de las RDB (relational data bases)
+## Commit 4. Actualización vista administrador (relational data bases)
 
-Las bases de datos surgen de la necesidad de conservar la información más allá de lo que existe en la memoria RAM.
 
-Las bases de datos basadas en archivos eran datos guardados en texto plano, fáciles de guardar pero muy difíciles de consultar y por la necesidad de mejorar esto nacen las bases de datos relacionales. **Su inventor Edgar Codd** dejó ciertas reglas para asegurarse de que toda la filosofía de las bases de datos no se perdiera, estandarizando el proceso, **Codd invento el algebra relacional**
 
-(Contenido adicional)
-Bases de datos relacionales (RBD)
-
-Es importante que sea fácil de guardar y extraer, anteriormente se usaban bases de datos basadas en archivos, el cuál era texto plano fácil de guardar, pero difícil de extraer, por esto se inventaron las bases de datos relacionales. En 1990 Codd se preocupó porque los sistemas de gestión de bases de datos (SGBD) que decían ser relacionales, no lo eran. En la práctica es difícil cumplir las 12 pero, un SGBD es más relacional cuantas más reglas cumpla
-
-Las Reglas y mandamientos de Edgar Frank Ted Codd
-
-**Regla 0:** Regla de fundación.
-a) Cualquier sistema que se proclame como relacional, debe ser capaz de gestionar sus bases de datos enteramente mediante sus capacidades relacionales.
-
-**Regla 1:** Regla de la información.
-a) Todos los datos deben estar almacenados en las tablas
-b) Esas tablas deben cumplir las premisas del modelo relacional
-c) No puede haber información a la que accedemos por otra vía
-
-**Regla 2:** Regla del acceso garantizado.
-a) Cualquier dato es accesible sabiendo la clave de su fila y el nombre de su columna o atributo
-b) Si a un dato no podemos acceder de esta forma, no estamos usando un modelo relacional
-
-**Regla 3:** Regla del tratamiento sistemático de valores nulos.
-a) Esos valores pueden dar significado a la columna que los contiene
-b) El SGBD debe tener la capacidad de manejar valores nulos
-c) El SGBD reconocerá este valor diferenciándolo de cualquier otro
-d) El SGBD deberá aplicársele la lógica apropiada
-e) Es un valor independiente del tipo de datos de la columna
-
-**Regla 4:** Catálogo dinámico en línea basado en el modelo relacional.
-a) El catálogo en línea es el diccionario de datos
-b) El diccionario de datos se debe de poder consultar usando las mismas técnicas que para los datos
-c) Los metadatos, por tanto, se organizan también en tablas relacionales
-d) Si SELECT es una instrucción que consulta datos, también será la que consulta los metadatos
-
-**Regla 5:** Regla comprensiva del sublenguaje de los datos completo.
-a) Al menos tiene que existir un lenguaje capaz de hacer todas las funciones del SGBD
-b) No puede haber funciones fuera de ese lenguaje
-c) Puede haber otros lenguajes en el SGBD para hacer ciertas tareas
-d) Pero esas tareas también se deben poder hacer con el “lenguaje completo”
-
-**Regla 6:** Regla de actualización de vistas.
-a) Las vistas tienen que mostrar información actualizada
-b) No puede haber diferencias entre los datos de las vistas y los datos de las tablas base
-
-**Regla 7:** Alto nivel de inserción, actualización, y cancelación.
-a) La idea es que el lenguaje que maneja la base de datos sea muy humano
-b) Eso implica que las operaciones del lenguaje de manipulación de los datos (DML) trabajen con conjuntos de filas a la vez
-c) Para modificar, eliminar o añadir datos, no hará falta programar de la forma en la que lo hacen los lenguajes de tercera generación como C o Java
-
-**Regla 8:** Independencia física de los datos.
-a) Cambios en la física de la BD no afecta a las aplicaciones ni a los esquemas lógicos
-b) El acceso a las tablas (elemento lógico) no cambia porque la física de la base de datos cambie
-
-**Regla 9:** Independencias lógicas de los datos.
-a) Cambios en el esquema lógico (tablas) de la BD no afectan al resto de esquemas
-b) Si cambiamos nombres de tabla, o de columna o modificamos información de las filas, las aplicaciones (esquema externo) no se ven afectadas
-c) Es más difícil de conseguir
-
-**Regla 10:** Independencia de la integridad.
-a) Las reglas de integridad (restricciones) deben de ser gestionadas y almacenadas por el SGBD
-
-**Regla 11:** Independencia de la distribución.
-a) Que la base de datos se almacene o gestione de forma distribuida en varios servidores, no afecta al uso de esta ni a la programación de las aplicaciones de usuario
-b) El esquema lógico es el mismo independientemente de si la BD es distribuida o no
-
-**Regla 12:** La regla de la no subversión.
-a) La base de datos no permitirá que exista un lenguaje o forma de acceso, que permita saltarse las reglas anteriores.
 
 ![image](https://user-images.githubusercontent.com/114417877/196577914-49c6a91d-2f7f-4d34-8aca-15ce078e458f.png)
 
