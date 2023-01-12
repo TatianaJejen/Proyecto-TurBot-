@@ -9,7 +9,7 @@
   - [Commits](#commits)
   - [Commit 1. Creación Rama DEV para Repositorio](#commit-1-creación-rama-dev-para-repositorio)
   - [Commit 2. Inicio Web Service Turbot](#commit-2-inicio-web-service-turbot)
-  - [Commit 3. Cargue del Loggin](#commit-3-cargue-del-loggin)
+  - [Commit 3. Cargue del Loggina](#commit-3-cargue-del-loggina)
     - [Clase 3 Historia de las RDB (relational data bases)](#clase-3-historia-de-las-rdb-relational-data-bases)
     - [Clase 4 Entidades y atributos](#clase-4-entidades-y-atributos)
       - [Atributos](#atributos)
@@ -111,7 +111,7 @@ Comenzaremos trabajando por la rama DEV de manera colaborativa
 
 Creación de la estructura que usaremeos en nuestro web service, se decide usar para HTML y CSS Bootstrap que es un framework front-end utilizado para desarrollar aplicaciones web ya que agiliza el diseño al contar con variación de plantillas y complementos para JavaScript tambien Django es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como modelo–vista–controlador y nos ayudara a cómo configurar un entorno de desarrollo y cómo empezar a usarlo para crear tus propias aplicaciones web. Por ultimo como gestor de bases relacionales utilizaremos PostgreSQL. 
 
-## Commit 3. Cargue del Loggin
+## Commit 3. Cargue del Loggina
 
 Se genera la creacion de la vista principal del loggin donde los usuarios finales ingresaran sus datos y este realizara una validacion de credenciales para poder dar acceso a la pagina inicialmente antes de crear la conexión a la base y proceder a configurar las validaciones, se realiza un diseño de estilos para poder volver el front más amigable a los usuarios, se decide tomar la paleta de colores DataPro
 
