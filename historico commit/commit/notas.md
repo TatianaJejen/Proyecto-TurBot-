@@ -103,7 +103,7 @@
 
 ## Commit 1. Creación Rama DEV para Repositorio
 
-Se da inicio con la creación del repositorio en Git que es un sistema de control de versiones distribuido, con esto podremos guardar nuestro historial y poder regresar a uun versión anterior y llevar un registro de cambios indicando cuando ocurrieron,quien los realizo y donde.
+Se da inicio con la creación del repositorio en Git que es un sistema de control de versiones distribuido, con esto podremos guardar nuestro historial y poder regresar a un versión anterior y llevar un registro de cambios indicando cuando ocurrieron,quien los realizo y donde.
 
 Comenzaremos trabajando por la rama DEV de manera colaborativa
 
@@ -136,7 +136,7 @@ Los atributos se representan con óvalos, los que tienen multiples valores lleva
 
 Los **atributos compuestos** son aquellos que tienen atributos ellos mismos.
 
-Los **atributos llave** son aquellos que identifican a la entidad y no pueden ser repetidos, se diagraman con underline. Existen:
+Los **atributos llave** son aquellos que iidentifican a la entidad y no pueden ser repetidos, se diagraman con underline. Existen:
 
 - Naturales: Son inherentes al objeto como el número de serie
 - Clave artificial: No es inherente al objeto y se asigna de manera arbitraria
