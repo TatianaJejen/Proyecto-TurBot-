@@ -115,7 +115,7 @@ Creación de la estructura que usaremeos en nuestro web service, se decide usar 
 
 Se genera la creacion de la vista principal del loggin donde los usuarios finales ingresaran sus datos y este realizara una validacion de credenciales para poder dar acceso a la pagina inicialmente antes de crear la conexión a la base y proceder a configurar las validaciones, se realiza un diseño de estilos para poder volver el front más amigable a los usuarios, se decide tomar la paleta de colores DataPro
 
-![src/loggin.png](src/loggin.png)
+![src/loggin.PNG](src/loggin.PNG)
 
 ## Commit 4. Actualización vista administrador (relational data bases)
 
