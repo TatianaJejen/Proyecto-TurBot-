@@ -120,11 +120,7 @@ Se genera la creacion de la vista principal del loggin donde los usuarios finale
 
 ## Commit 4. Actualización vista administrador (relational data bases)
 
-
-
-
 ![image](https://user-images.githubusercontent.com/114417877/196577914-49c6a91d-2f7f-4d34-8aca-15ce078e458f.png)
-
 
 ### Clase 4 Entidades y atributos
 
